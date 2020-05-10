@@ -42,18 +42,18 @@ export default [
     input: 'src/index.ts',
     output: [
       {
-        file: 'dist/~name~.cjs.js',
+        file: 'dist/test.cjs.js',
         format: 'cjs',
       },
       {
-        file: 'dist/~name~.esm.js',
+        file: 'dist/test.esm.js',
         format: 'esm',
       },
     ],
     external: ['vue'],
     plugins: [
       postcss({
-        extract: '~name~.css',
+        extract: 'test.css',
         minimize: true,
       }),
       ...plugins,
