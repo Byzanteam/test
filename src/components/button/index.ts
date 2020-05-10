@@ -1,0 +1,6 @@
+import Button from './button.vue'
+
+export {
+  Button,
+  Button as default,
+}
